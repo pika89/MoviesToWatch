@@ -1,0 +1,31 @@
+.example-card {
+    max-width: 400px;
+    display: inline-block !important;
+    margin: 19px;
+}
+.mat-card-title{
+    width: 300px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row{
+    padding: 0 20px;
+}
+.mat-card-header span{
+    float: right;
+    font-size: 20px;
+}
+.example-card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}  
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  .nav-item{
+      cursor: pointer;
+      padding: 0 9px;
+  }
