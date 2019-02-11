@@ -13,31 +13,14 @@ export class MoviesComponent implements OnInit {
   @Input() movies = new Movies();
   @Input() paginate: Function;
   pageEvent: PageEvent;
-  title: string;
 
   constructor(private _moviesService: MoviesServiceService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.checkWhat();
-  }
-
-
-  checkWhat(){
-    if(this.route.snapshot.routeConfig.path === ''){
-      this.title = 'Popular Movies';
-    }
-    else if(this.route.snapshot.routeConfig.path === 'top-rated'){
-      this.title = 'Top Rated Movies';
-    }
-    else if(this.route.snapshot.routeConfig.path === 'upcomming-movies'){
-      this.title = 'Upcomming Movies';
-    }
-    else if(this.route.snapshot.routeConfig.path === 'now-playing'){
-      this.title = 'Now Playing Movies';
-    }
   }
 
   checkPage(e) {
+    window.scrollTo(0, 0);
     const nextPage = e.pageIndex + 1;
       this.paginate(nextPage)
       .subscribe((response: any) => {
@@ -47,6 +30,16 @@ export class MoviesComponent implements OnInit {
         (error) => {
           console.log(error);
         });
+  }
+
+  getMovieDetails(movie){
+    this._moviesService.getMovie(movie.id).subscribe((response: Movies) => {
+      const url = 'movie/' + movie.id + '/' + movie.title;
+      this.router.navigateByUrl(url);
+    },
+      (error) => {
+        console.log(error);
+      });
   }
 
 }

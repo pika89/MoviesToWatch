@@ -9,7 +9,7 @@ export class Movies {
     public nowPlaying: boolean;
   }
 
-  export class Result extends Movies{
+  export class Result extends Movies {
     public id: number;
     public vote_average: number;
     public release_date: string;

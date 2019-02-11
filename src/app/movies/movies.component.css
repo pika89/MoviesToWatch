@@ -1,7 +1,7 @@
 .example-card {
     max-width: 400px;
     display: inline-block !important;
-    margin: 19px;
+    margin: 18px;
 }
 .mat-card-title{
     width: 300px;
@@ -18,6 +18,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }  
+
+.mat-card-image{
+    max-height: 500px;
+}
 
 .fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 

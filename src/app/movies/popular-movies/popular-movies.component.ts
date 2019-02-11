@@ -29,7 +29,7 @@ export class PopularMoviesComponent implements OnInit {
         });
   }
 
-  paginateFunction(page){
+  paginateFunction(page) {
     return this._moviesService.getPopularMovies(page);
   }
 

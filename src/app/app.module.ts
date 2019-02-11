@@ -12,16 +12,18 @@ import { TopRatedMoviesComponent } from './movies/top-rated-movies/top-rated-mov
 import { UpcommingMoviesComponent } from './movies/upcomming-movies/upcomming-movies.component';
 import { NowPlayingComponent } from './movies/now-playing/now-playing.component';
 import { PopularMoviesComponent } from './movies/popular-movies/popular-movies.component';
-import { PopularTvshowsComponent } from './tv-shows/popular-tvshows/popular-tvshows.component';
+import { NavigationComponent } from './nav-layout/navigation.component';
+import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 
 const appRoutes: Routes = [
   {
     path: '', component: PopularMoviesComponent
   },
-  { path: 'top-rated', component: TopRatedMoviesComponent },
+  { path: 'top-rated-movies', component: TopRatedMoviesComponent },
   { path: 'upcomming-movies', component: UpcommingMoviesComponent },
-  { path: 'now-playing', component: NowPlayingComponent },
-  { path: 'popular-tv-shows', component: PopularTvshowsComponent },
+  { path: 'now-playing-movies', component: NowPlayingComponent },
+  { path: 'movie/:id/:title', component: MovieDetailsComponent },
+
 
 
 ];
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     UpcommingMoviesComponent,
     NowPlayingComponent,
     PopularMoviesComponent,
-    PopularTvshowsComponent,
+    NavigationComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     RouterModule.forRoot(
