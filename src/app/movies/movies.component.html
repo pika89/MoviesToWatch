@@ -1,8 +1,9 @@
 <section class="mat-typography">
   <app-navigation></app-navigation>
+  <h1>{{title | titlecase}}</h1>
   <mat-card class="example-card" *ngFor="let item of movies.results">
     <mat-card-header>
-      <mat-card-title (click)="getMovieDetails(item)" class="card-title">
+      <mat-card-title (click)="goToMovie(item)" class="card-title">
         {{item.title}}
       </mat-card-title>
       <span>{{item.vote_average}}/10</span>

@@ -1,0 +1,30 @@
+.container {
+    width:100%; 
+  }
+
+  .bgd-img{
+      width: 100%;
+      opacity: 0.2;
+      height: 591px;
+      position: absolute;
+  }
+  
+  .first-box {
+    width:20%; 
+    float:left; 
+    margin: 20px;
+  }
+  
+  .first-box img {
+      width: 100%;
+  }
+  
+  .second-box {
+    width:30%;
+    margin: 20px;
+    float:left; 
+  }
+
+  .second-box span{
+      font-size: 20px;
+  }

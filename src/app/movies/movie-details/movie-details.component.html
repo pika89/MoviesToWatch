@@ -1,3 +1,17 @@
-<p>
-  movie-details works!
-</p>
+<section class="mat-typography">
+  <app-navigation></app-navigation>
+  <div class="container">
+      <img class="bgd-img" src="https://image.tmdb.org/t/p/w500{{movie?.backdrop_path}}" alt="">
+      <div class="first-box">
+          <img  mat-card-image src="https://image.tmdb.org/t/p/w500{{movie?.poster_path}}" alt="{{movie?.title}}">
+        </div>
+    
+      <div class="second-box">
+          <h1>{{movie?.title}} ({{movie?.release_date | date: 'yyyy'}})</h1>
+          <span>{{movie?.vote_average}}/10</span>
+          <br>
+          <br>
+          <p>{{movie?.overview}}</p>
+      </div>
+    </div>
+</section>

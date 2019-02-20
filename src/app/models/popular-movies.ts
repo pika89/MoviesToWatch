@@ -15,6 +15,7 @@ export class Movies {
     public release_date: string;
     public releaseDate: string;
     public title: string;
+    public backdrop_path: string;
     public poster_path: string;
     public overview: string;
   }

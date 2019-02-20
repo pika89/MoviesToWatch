@@ -13,10 +13,17 @@ export class MoviesComponent implements OnInit {
   @Input() movies = new Movies();
   @Input() paginate: Function;
   pageEvent: PageEvent;
+  title: string;
 
   constructor(private _moviesService: MoviesServiceService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    if(this.route.snapshot.routeConfig.path === ''){
+      this.title = 'Popular-Movies';
+    }
+    else{
+      this.title = this.route.snapshot.routeConfig.path;
+    }
   }
 
   checkPage(e) {
@@ -32,14 +39,9 @@ export class MoviesComponent implements OnInit {
         });
   }
 
-  getMovieDetails(movie){
-    this._moviesService.getMovie(movie.id).subscribe((response: Movies) => {
+  goToMovie(movie){
       const url = 'movie/' + movie.id + '/' + movie.title;
       this.router.navigateByUrl(url);
-    },
-      (error) => {
-        console.log(error);
-      });
   }
 
 }

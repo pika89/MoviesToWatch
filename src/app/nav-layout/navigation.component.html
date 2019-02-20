@@ -1,25 +1,12 @@
 <mat-toolbar color="warn">
-  <!-- <button mat-icon-button [matMenuTriggerFor]="menu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>local_movies</mat-icon>
-      <span>Movies</span>
-    </button>
-    <button mat-menu-item [routerLink]="['/popular-tv-shows']" routerLinkActive="router-link-active">
-      <mat-icon>slideshow</mat-icon>
-      <span>TV Shows</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>recent_actors</mat-icon>
-      <span>Actors</span>
-    </button>
-  </mat-menu> -->
-  {{title | titlecase}}
+  <span [routerLink]="['/popular-movies']" routerLinkActive="router-link-active" class="nav-item dropdown"> <span class="dropbtn">Movies</span>
+    <span class="dropdown-content">
+      <a [routerLink]="['/']">Popular Movies</a>
+      <a [routerLink]="['/top-rated-movies']">Top Rated Movies</a>
+      <a [routerLink]="['/upcomming-movies']">Upcomming Movies</a>
+      <a [routerLink]="['/now-playing-movies']">Now Playing Movies</a>
+    </span> </span>
+  <span [routerLink]="['/popular-movies']" routerLinkActive="router-link-active" class="nav-item">TV Shows</span>
+  <span [routerLink]="['/popular-movies']" routerLinkActive="router-link-active" class="nav-item">Actors</span>
   <span class="fill-remaining-space"></span>
-  <span [routerLink]="['/']" routerLinkActive="router-link-active" class="nav-item"> Popular</span>
-  <span [routerLink]="['/top-rated-movies']" routerLinkActive="router-link-active" class="nav-item">Top Rated</span>
-  <span [routerLink]="['/upcomming-movies']" routerLinkActive="router-link-active" class="nav-item">Upcomming</span>
-  <span [routerLink]="['/now-playing-movies']" routerLinkActive="router-link-active" class="nav-item">Now Playing</span>
 </mat-toolbar>
