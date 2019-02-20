@@ -11,6 +11,7 @@ export class MovieDetailsComponent implements OnInit {
   movieId: number;
   movie: any;
   sub: any;
+  url: any;
 
   constructor(private _movieService: MoviesServiceService, private route: ActivatedRoute) { }
 
@@ -26,6 +27,8 @@ export class MovieDetailsComponent implements OnInit {
   getMovieDetails(){
     this._movieService.getMovie(this.movieId).subscribe((response: any) => {
       this.movie = response;
+      this.url = 'https://image.tmdb.org/t/p/w500' + this.movie.backdrop_path;
+      console.log(this.url);      
     },
       (error) => {
         console.log(error);

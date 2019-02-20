@@ -5,5 +5,14 @@
 }
 .cdk-overlay-connected-position-bounding-box{
     top:0 !important;
-    
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
