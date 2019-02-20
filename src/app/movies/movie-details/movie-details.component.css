@@ -12,6 +12,7 @@
     opacity: 0.3;
     left: 0;
     z-index: -1;
+    height: 905px;
   }
   
   .first-box {
@@ -27,10 +28,28 @@
   
   .second-box {
     width:60%;
-    margin: 10px 10px 0 10px;
+    margin: 16px 10px 0 10px;
     float:left; 
   }
 
   .second-box span{
     font-size: 20px;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .bgd-img {
+      height: 886px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .bgd-img {
+      height: 960px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .bgd-img {
+      height: 680px;
+    }
   }
