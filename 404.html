@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script>
+        // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+        (function(){
+          var redirect = sessionStorage.redirect;
+          delete sessionStorage.redirect;
+          if (redirect && redirect != location.href) {
+            history.replaceState(null, null, redirect);
+          }
+        })();
+      </script>
+  <meta charset="utf-8">
+  <title>Movietowatch</title>
+  <base href="https://pika89.github.io/moviestowatch">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.a2fbb3bec331401cf8f7.css"></head>
+<body>
+  <app-root></app-root>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.c739572e886ae09fa296.js"></script><script type="text/javascript" src="main.738c1174e8fc2332f100.js"></script></body>
+</html>
