@@ -8,15 +8,16 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class MoviesServiceService {
+  movieUrl: 'https://api.themoviedb.org/3/movie/';
 
   constructor(private http: HttpClient) { }
 
-  getPopularMoviesUrl = environment.movieUrl + 'popular?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-  getTopRatedMoviesUrl = environment.movieUrl + 'top_rated?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-  getUpcommingMoviesUrl = environment.movieUrl + 'upcoming?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-  getNowPlayingMoviesUrl = environment.movieUrl + 'now_playing?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-  getLatestMovieUrl = environment.movieUrl + 'latest?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
-  getMovieDetailsUrl = environment.movieUrl + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
+  getPopularMoviesUrl = this.movieUrl + 'popular?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+  getTopRatedMoviesUrl = this.movieUrl + 'top_rated?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+  getUpcommingMoviesUrl = this.movieUrl + 'upcoming?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+  getNowPlayingMoviesUrl = this.movieUrl + 'now_playing?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+  getLatestMovieUrl = this.movieUrl + 'latest?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
+  getMovieDetailsUrl = this.movieUrl + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
 
   getPopularMovies(page) {
     const result = this.http.get(this.getPopularMoviesUrl + page)
@@ -67,7 +68,7 @@ export class MoviesServiceService {
   }
 
   getMovie(movieId) {
-    const result = this.http.get(environment.movieUrl + movieId + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US')
+    const result = this.http.get(this.movieUrl + movieId + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US')
       .pipe(map((response) => {
         if (response == null) {
           return null;

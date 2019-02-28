@@ -39,3 +39,42 @@
   h1{
       margin: 19px;
   }
+
+  
+  @media screen and (max-width: 1366px) {
+    .example-card {
+        display: inline-block !important;
+        width: 400px;
+        margin: 21px;
+        height: 700px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .example-card {
+        display: inline-block !important;
+        width: 400px;
+        margin: 21px;
+        height: 700px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .example-card {
+        display: inline-block !important;
+        width: 301px;
+        margin: 21px;
+        height: 430px;
+    }
+    .mat-card-title{
+        width: 200px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    #vote-average{
+     font-size: 14px;       
+    }
+    h1{
+        font-size: 16px;
+    }
+  }

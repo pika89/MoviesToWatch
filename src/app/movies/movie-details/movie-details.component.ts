@@ -13,7 +13,9 @@ export class MovieDetailsComponent implements OnInit {
   sub: any;
   url: any;
 
-  constructor(private _movieService: MoviesServiceService, private route: ActivatedRoute) { }
+  constructor(private _movieService: MoviesServiceService, private route: ActivatedRoute) { 
+  
+  }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {

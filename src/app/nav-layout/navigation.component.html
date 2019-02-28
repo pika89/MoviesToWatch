@@ -1,12 +1,12 @@
 <mat-toolbar color="warn">
-  <span [routerLink]="['/popular-movies']" routerLinkActive="router-link-active" class="nav-item dropdown"> <span class="dropbtn">Movies</span>
+  <span class="nav-item dropdown"> <span class="dropbtn">Movies</span>
     <span class="dropdown-content">
       <a [routerLink]="['/']">Popular Movies</a>
       <a [routerLink]="['/top-rated-movies']">Top Rated Movies</a>
       <a [routerLink]="['/upcomming-movies']">Upcomming Movies</a>
       <a [routerLink]="['/now-playing-movies']">Now Playing Movies</a>
     </span> </span>
-  <span [routerLink]="['/popular-movies']" routerLinkActive="router-link-active" class="nav-item">TV Shows</span>
-  <span [routerLink]="['/popular-movies']" routerLinkActive="router-link-active" class="nav-item">Actors</span>
+  <span routerLinkActive="router-link-active" class="nav-item">TV Shows</span>
+  <span routerLinkActive="router-link-active" class="nav-item">Actors</span>
   <span class="fill-remaining-space"></span>
 </mat-toolbar>

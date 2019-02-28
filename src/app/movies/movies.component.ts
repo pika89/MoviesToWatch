@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import { MoviesServiceService } from '../services/movies-service.service';
 import { Movies } from '../models/popular-movies';
 import { PageEvent } from '@angular/material';
@@ -18,10 +18,10 @@ export class MoviesComponent implements OnInit {
   constructor(private _moviesService: MoviesServiceService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    if(this.route.snapshot.routeConfig.path === ''){
+    if (this.route.snapshot.routeConfig.path === '') {
       this.title = 'Popular-Movies';
     }
-    else{
+    else {
       this.title = this.route.snapshot.routeConfig.path;
     }
   }
@@ -29,7 +29,7 @@ export class MoviesComponent implements OnInit {
   checkPage(e) {
     window.scrollTo(0, 0);
     const nextPage = e.pageIndex + 1;
-      this.paginate(nextPage)
+    this.paginate(nextPage)
       .subscribe((response: any) => {
         this.movies = response;
         this.movies.results.length = e.pageSize;
@@ -39,9 +39,9 @@ export class MoviesComponent implements OnInit {
         });
   }
 
-  goToMovie(movie){
-      const url = 'movie/' + movie.id + '/' + movie.title;
-      this.router.navigateByUrl(url);
+  goToMovie(movie) {
+    const url = 'movie/' + movie.id + '/' + movie.title;
+    this.router.navigateByUrl(url);
   }
 
 }
