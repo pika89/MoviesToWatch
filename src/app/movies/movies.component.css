@@ -53,10 +53,10 @@
     }
   }
 
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .example-card {
-        width: 267px;
-        height: 400px;
+        width: 305px;
+        height: 410px;
     }
     .mat-card-title{
         width: 160px;
@@ -81,7 +81,7 @@
         font-size: 16px;
     }
   }
-
+/* 
   @media screen and (max-width: 600px) {
     .example-card {
         margin: 40px auto;
@@ -97,4 +97,4 @@
     h1{
         font-size: 16px;
     }
-  }
+  } */
