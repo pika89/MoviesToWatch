@@ -14,6 +14,7 @@ export class MoviesComponent implements OnInit {
   @Input() paginate: Function;
   pageEvent: PageEvent;
   title: string;
+  regularDistribution = 100 / 3;
 
   constructor(private _moviesService: MoviesServiceService, private router: Router, private route: ActivatedRoute) { }
 

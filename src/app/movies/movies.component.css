@@ -43,8 +43,7 @@
   
   @media screen and (max-width: 1366px) {
     .example-card {
-        display: inline-block !important;
-        width: 350px;
+        width: 380px;
         height: 500px;
     }
 
@@ -56,8 +55,7 @@
 
   @media screen and (max-width: 1025px) {
     .example-card {
-        display: inline-block !important;
-        width: 228px;
+        width: 267px;
         height: 400px;
     }
     .mat-card-title{
@@ -72,11 +70,11 @@
 
   @media screen and (max-width: 768px) {
     .example-card {
-        display: inline-block !important;
         height: 500px;
+        width: 310px;
     }
     .mat-card-title{
-        width: 120px;
+        width: 220px;
         font-size: 16px;
     }
     #vote-average{
@@ -86,7 +84,6 @@
 
   @media screen and (max-width: 600px) {
     .example-card {
-        display: inline-block !important;
         margin: 40px auto;
         height: 400px;
     }
