@@ -55,11 +55,11 @@
 
   @media screen and (max-width: 1024px) {
     .example-card {
-        width: 305px;
+        width: 261px;
         height: 410px;
     }
     .mat-card-title{
-        width: 160px;
+        width: 200px;
         font-size: 12px;
     }
     #vote-average{
@@ -71,7 +71,7 @@
   @media screen and (max-width: 768px) {
     .example-card {
         height: 500px;
-        width: 310px;
+        width: 30px;
     }
     .mat-card-title{
         width: 220px;
