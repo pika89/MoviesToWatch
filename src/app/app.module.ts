@@ -5,8 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule, MatGridListModule, MatToolbarModule, MatIconModule, MatButtonModule, MatPaginatorModule } from "@angular/material";
 import { MatMenuModule } from '@angular/material/menu';
-
 import { AppComponent } from './app.component';
+import { FlexModule } from '@angular/flex-layout';
 import { MoviesComponent } from './movies/movies.component';
 import { TopRatedMoviesComponent } from './movies/top-rated-movies/top-rated-movies.component';
 import { UpcommingMoviesComponent } from './movies/upcomming-movies/upcomming-movies.component';
@@ -46,6 +46,7 @@ const appRoutes: Routes = [
     BrowserModule,
     MatCardModule,
     MatPaginatorModule,
+    FlexModule,
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
