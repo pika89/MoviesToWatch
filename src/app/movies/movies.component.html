@@ -1,9 +1,13 @@
 <section class="mat-typography">
   <app-navigation></app-navigation>
   <h1>{{title | titlecase}}</h1>
-  <div fxLayout="row" >
-    <div fxLayout.xs="column" fxLayoutWrap  fxFlexFill>
-      <mat-card class="example-card"  *ngFor="let item of movies.results">
+  <div fxLayout
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="10px"
+  fxLayoutGap.xs="0">
+    <div fxFlex="100%">
+      <mat-card class="example-card" *ngFor="let item of movies.results">
         <mat-card-header>
           <mat-card-title (click)="goToMovie(item)" class="card-title">{{item.title | slice:0:29 }} <ng-container
               *ngIf="item.title.length >= 29">...</ng-container>

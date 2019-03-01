@@ -41,7 +41,7 @@
   }
 
   
-  @media screen and (max-width: 1366px) {
+  /* @media screen and (max-width: 1366px) {
     .example-card {
         width: 380px;
         height: 500px;
@@ -97,4 +97,4 @@
     h1{
         font-size: 16px;
     }
-  } */
+  } */ 
