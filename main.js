@@ -11,7 +11,7 @@ function webpackEmptyAsyncContext(req) {
 	// Here Promise.resolve().then() is used instead of new Promise() to prevent
 	// uncaught exception popping up in devtools
 	return Promise.resolve().then(function() {
-		var e = new Error('Cannot find module "' + req + '".');
+		var e = new Error("Cannot find module '" + req + "'");
 		e.code = 'MODULE_NOT_FOUND';
 		throw e;
 	});
@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -99,13 +99,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _movies_movies_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./movies/movies.component */ "./src/app/movies/movies.component.ts");
-/* harmony import */ var _movies_top_rated_movies_top_rated_movies_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./movies/top-rated-movies/top-rated-movies.component */ "./src/app/movies/top-rated-movies/top-rated-movies.component.ts");
-/* harmony import */ var _movies_upcomming_movies_upcomming_movies_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./movies/upcomming-movies/upcomming-movies.component */ "./src/app/movies/upcomming-movies/upcomming-movies.component.ts");
-/* harmony import */ var _movies_now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./movies/now-playing/now-playing.component */ "./src/app/movies/now-playing/now-playing.component.ts");
-/* harmony import */ var _movies_popular_movies_popular_movies_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./movies/popular-movies/popular-movies.component */ "./src/app/movies/popular-movies/popular-movies.component.ts");
-/* harmony import */ var _nav_layout_navigation_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./nav-layout/navigation.component */ "./src/app/nav-layout/navigation.component.ts");
-/* harmony import */ var _movies_movie_details_movie_details_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./movies/movie-details/movie-details.component */ "./src/app/movies/movie-details/movie-details.component.ts");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var _movies_movies_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./movies/movies.component */ "./src/app/movies/movies.component.ts");
+/* harmony import */ var _movies_top_rated_movies_top_rated_movies_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./movies/top-rated-movies/top-rated-movies.component */ "./src/app/movies/top-rated-movies/top-rated-movies.component.ts");
+/* harmony import */ var _movies_upcomming_movies_upcomming_movies_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./movies/upcomming-movies/upcomming-movies.component */ "./src/app/movies/upcomming-movies/upcomming-movies.component.ts");
+/* harmony import */ var _movies_now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./movies/now-playing/now-playing.component */ "./src/app/movies/now-playing/now-playing.component.ts");
+/* harmony import */ var _movies_popular_movies_popular_movies_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./movies/popular-movies/popular-movies.component */ "./src/app/movies/popular-movies/popular-movies.component.ts");
+/* harmony import */ var _nav_layout_navigation_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./nav-layout/navigation.component */ "./src/app/nav-layout/navigation.component.ts");
+/* harmony import */ var _movies_movie_details_movie_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./movies/movie-details/movie-details.component */ "./src/app/movies/movie-details/movie-details.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -127,14 +128,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var appRoutes = [
     {
-        path: '', component: _movies_popular_movies_popular_movies_component__WEBPACK_IMPORTED_MODULE_12__["PopularMoviesComponent"]
+        path: '', component: _movies_popular_movies_popular_movies_component__WEBPACK_IMPORTED_MODULE_13__["PopularMoviesComponent"]
     },
-    { path: 'top-rated-movies', component: _movies_top_rated_movies_top_rated_movies_component__WEBPACK_IMPORTED_MODULE_9__["TopRatedMoviesComponent"] },
-    { path: 'upcomming-movies', component: _movies_upcomming_movies_upcomming_movies_component__WEBPACK_IMPORTED_MODULE_10__["UpcommingMoviesComponent"] },
-    { path: 'now-playing-movies', component: _movies_now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_11__["NowPlayingComponent"] },
-    { path: 'movie/:id/:title', component: _movies_movie_details_movie_details_component__WEBPACK_IMPORTED_MODULE_14__["MovieDetailsComponent"] },
+    { path: 'top-rated-movies', component: _movies_top_rated_movies_top_rated_movies_component__WEBPACK_IMPORTED_MODULE_10__["TopRatedMoviesComponent"] },
+    { path: 'upcomming-movies', component: _movies_upcomming_movies_upcomming_movies_component__WEBPACK_IMPORTED_MODULE_11__["UpcommingMoviesComponent"] },
+    { path: 'now-playing-movies', component: _movies_now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_12__["NowPlayingComponent"] },
+    { path: 'movie/:id/:title', component: _movies_movie_details_movie_details_component__WEBPACK_IMPORTED_MODULE_15__["MovieDetailsComponent"] },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -143,19 +145,20 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-                _movies_movies_component__WEBPACK_IMPORTED_MODULE_8__["MoviesComponent"],
-                _movies_top_rated_movies_top_rated_movies_component__WEBPACK_IMPORTED_MODULE_9__["TopRatedMoviesComponent"],
-                _movies_upcomming_movies_upcomming_movies_component__WEBPACK_IMPORTED_MODULE_10__["UpcommingMoviesComponent"],
-                _movies_now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_11__["NowPlayingComponent"],
-                _movies_popular_movies_popular_movies_component__WEBPACK_IMPORTED_MODULE_12__["PopularMoviesComponent"],
-                _nav_layout_navigation_component__WEBPACK_IMPORTED_MODULE_13__["NavigationComponent"],
-                _movies_movie_details_movie_details_component__WEBPACK_IMPORTED_MODULE_14__["MovieDetailsComponent"],
+                _movies_movies_component__WEBPACK_IMPORTED_MODULE_9__["MoviesComponent"],
+                _movies_top_rated_movies_top_rated_movies_component__WEBPACK_IMPORTED_MODULE_10__["TopRatedMoviesComponent"],
+                _movies_upcomming_movies_upcomming_movies_component__WEBPACK_IMPORTED_MODULE_11__["UpcommingMoviesComponent"],
+                _movies_now_playing_now_playing_component__WEBPACK_IMPORTED_MODULE_12__["NowPlayingComponent"],
+                _movies_popular_movies_popular_movies_component__WEBPACK_IMPORTED_MODULE_13__["PopularMoviesComponent"],
+                _nav_layout_navigation_component__WEBPACK_IMPORTED_MODULE_14__["NavigationComponent"],
+                _movies_movie_details_movie_details_component__WEBPACK_IMPORTED_MODULE_15__["MovieDetailsComponent"],
             ],
             imports: [
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes),
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatCardModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatPaginatorModule"],
+                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_8__["FlexModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"],
                 _angular_material_menu__WEBPACK_IMPORTED_MODULE_6__["MatMenuModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatIconModule"],
@@ -187,9 +190,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Movies", function() { return Movies; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Result", function() { return Result; });
 var __extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -221,7 +227,7 @@ var Result = /** @class */ (function (_super) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    z-index: 1;\r\n \r\n  }\r\n\r\n  .bgd-img{\r\n    width: 100%;\r\n    position: absolute;\r\n    opacity: 0.3;\r\n    left: 0;\r\n    z-index: -1;\r\n    height: 905px;\r\n  }\r\n\r\n  .first-box {\r\n    width:30%; \r\n    float:left; \r\n    margin: 10px 10px 0 10px;\r\n  }\r\n\r\n  .first-box img {\r\n    width: 100%;\r\n    margin: 10px 10px 0 10px;\r\n  }\r\n\r\n  .second-box {\r\n    width:60%;\r\n    margin: 16px 10px 0 10px;\r\n    float:left; \r\n  }\r\n\r\n  .second-box span{\r\n    font-size: 20px;\r\n  }\r\n\r\n  @media screen and (max-width: 1366px) {\r\n    .bgd-img {\r\n      height: 886px;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 992px) {\r\n    .bgd-img {\r\n      height: 960px;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 600px) {\r\n    .bgd-img {\r\n      height: 680px;\r\n    }\r\n  }"
+module.exports = ".container {\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    z-index: 1;\r\n \r\n  }\r\n\r\n  .bgd-img{\r\n    width: 100%;\r\n    position: absolute;\r\n    opacity: 0.3;\r\n    left: 0;\r\n    z-index: -1;\r\n    height: 905px;\r\n  }\r\n\r\n  .first-box {\r\n    width:30%; \r\n    float:left; \r\n    margin: 10px 10px 0 10px;\r\n  }\r\n\r\n  .first-box img {\r\n    width: 100%;\r\n    margin: 10px 10px 0 10px;\r\n  }\r\n\r\n  .second-box {\r\n    width:60%;\r\n    margin: 16px 10px 0 10px;\r\n    float:left; \r\n  }\r\n\r\n  .second-box span{\r\n    font-size: 20px;\r\n  }\r\n\r\n  @media screen and (max-width: 1366px) {\r\n    .bgd-img {\r\n      height: 886px;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 992px) {\r\n    .bgd-img {\r\n      height: 960px;\r\n    }\r\n  }\r\n\r\n  @media screen and (max-width: 600px) {\r\n    .bgd-img {\r\n      height: 680px;\r\n    }\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW92aWVzL21vdmllLWRldGFpbHMvbW92aWUtZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLGNBQWM7SUFDZCxrQkFBa0I7SUFDbEIsVUFBVTs7RUFFWjs7RUFFQTtJQUNFLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLE9BQU87SUFDUCxXQUFXO0lBQ1gsYUFBYTtFQUNmOztFQUVBO0lBQ0UsU0FBUztJQUNULFVBQVU7SUFDVix3QkFBd0I7RUFDMUI7O0VBRUE7SUFDRSxXQUFXO0lBQ1gsd0JBQXdCO0VBQzFCOztFQUVBO0lBQ0UsU0FBUztJQUNULHdCQUF3QjtJQUN4QixVQUFVO0VBQ1o7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0U7TUFDRSxhQUFhO0lBQ2Y7RUFDRjs7RUFFQTtJQUNFO01BQ0UsYUFBYTtJQUNmO0VBQ0Y7O0VBRUE7SUFDRTtNQUNFLGFBQWE7SUFDZjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvbW92aWVzL21vdmllLWRldGFpbHMvbW92aWUtZGV0YWlscy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgei1pbmRleDogMTtcclxuIFxyXG4gIH1cclxuXHJcbiAgLmJnZC1pbWd7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIG9wYWNpdHk6IDAuMztcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB6LWluZGV4OiAtMTtcclxuICAgIGhlaWdodDogOTA1cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5maXJzdC1ib3gge1xyXG4gICAgd2lkdGg6MzAlOyBcclxuICAgIGZsb2F0OmxlZnQ7IFxyXG4gICAgbWFyZ2luOiAxMHB4IDEwcHggMCAxMHB4O1xyXG4gIH1cclxuICBcclxuICAuZmlyc3QtYm94IGltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbjogMTBweCAxMHB4IDAgMTBweDtcclxuICB9XHJcbiAgXHJcbiAgLnNlY29uZC1ib3gge1xyXG4gICAgd2lkdGg6NjAlO1xyXG4gICAgbWFyZ2luOiAxNnB4IDEwcHggMCAxMHB4O1xyXG4gICAgZmxvYXQ6bGVmdDsgXHJcbiAgfVxyXG5cclxuICAuc2Vjb25kLWJveCBzcGFue1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuXHJcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTM2NnB4KSB7XHJcbiAgICAuYmdkLWltZyB7XHJcbiAgICAgIGhlaWdodDogODg2cHg7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5OTJweCkge1xyXG4gICAgLmJnZC1pbWcge1xyXG4gICAgICBoZWlnaHQ6IDk2MHB4O1xyXG4gICAgfVxyXG4gIH1cclxuXHJcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIC5iZ2QtaW1nIHtcclxuICAgICAgaGVpZ2h0OiA2ODBweDtcclxuICAgIH1cclxuICB9Il19 */"
 
 /***/ }),
 
@@ -306,7 +312,7 @@ var MovieDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-card {\r\n    display: inline-block !important;\r\n    width: 400px;\r\n    margin: 21px;\r\n    height: 700px;\r\n}\r\n.mat-card-title{\r\n    width: 300px;\r\n    cursor: pointer;\r\n}\r\n.mat-toolbar-row, .mat-toolbar-single-row{\r\n    padding: 0 20px;\r\n}\r\n.mat-card-header span{\r\n    float: right;\r\n    font-size: 20px;\r\n}\r\n.example-card p {\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n}\r\n.mat-card-image{\r\n    height: 100%;\r\n}\r\n.fill-remaining-space {\r\n    /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\r\n    flex: 1 1 auto;\r\n  }\r\n.nav-item{\r\n      cursor: pointer;\r\n      padding: 0 9px;\r\n  }\r\nh1{\r\n      margin: 19px;\r\n  }\r\n@media screen and (max-width: 1366px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 400px;\r\n        margin: 21px;\r\n        height: 700px;\r\n    }\r\n  }\r\n@media screen and (max-width: 992px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 400px;\r\n        margin: 21px;\r\n        height: 700px;\r\n    }\r\n  }\r\n@media screen and (max-width: 600px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 301px;\r\n        margin: 21px;\r\n        height: 430px;\r\n    }\r\n    .mat-card-title{\r\n        width: 200px;\r\n        font-size: 14px;\r\n        cursor: pointer;\r\n    }\r\n    #vote-average{\r\n     font-size: 14px;       \r\n    }\r\n    h1{\r\n        font-size: 16px;\r\n    }\r\n  }"
+module.exports = ".example-card {\r\n    display: inline-block !important;\r\n    width: 400px;\r\n    margin: 21px;\r\n    height: 700px;\r\n}\r\n.mat-card-title{\r\n    width: 300px;\r\n    cursor: pointer;\r\n}\r\n.mat-toolbar-row, .mat-toolbar-single-row{\r\n    padding: 0 20px;\r\n}\r\n.mat-card-header span{\r\n    float: right;\r\n    font-size: 20px;\r\n}\r\n.example-card p {\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n}\r\n.mat-card-image{\r\n    height: 100%;\r\n}\r\n.fill-remaining-space {\r\n    /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\r\n    flex: 1 1 auto;\r\n  }\r\n.nav-item{\r\n      cursor: pointer;\r\n      padding: 0 9px;\r\n  }\r\nh1{\r\n      margin: 19px;\r\n  }\r\n@media screen and (max-width: 1366px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 380px;\r\n        margin: 40px 31x;\r\n        height: 700px;\r\n    }\r\n\r\n    .mat-card-title{\r\n        width: 290px;\r\n        font-size: 18px;\r\n    }\r\n  }\r\n@media screen and (max-width: 1025px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 440px;\r\n        margin: 20px 20px;\r\n        height: 500px;\r\n    }\r\n    .mat-card-title{\r\n        width: 340px;\r\n        font-size: 16px;\r\n    }\r\n  }\r\n@media screen and (max-width: 768px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 312px;\r\n        margin: 20px 20px;\r\n        height: 500px;\r\n    }\r\n    .mat-card-title{\r\n        width: 220px;\r\n        font-size: 16px;\r\n    }\r\n    #vote-average{\r\n        font-size: 16px;\r\n    }\r\n  }\r\n@media screen and (max-width: 600px) {\r\n    .example-card {\r\n        display: inline-block !important;\r\n        width: 301px;\r\n        margin: 40px auto;\r\n        height: 400px;\r\n    }\r\n    .mat-card-title{\r\n        width: 220px;\r\n        font-size: 14px;\r\n    }\r\n    #vote-average{\r\n     font-size: 14px;       \r\n    }\r\n    h1{\r\n        font-size: 16px;\r\n    }\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW92aWVzL21vdmllcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0NBQWdDO0lBQ2hDLFlBQVk7SUFDWixZQUFZO0lBQ1osYUFBYTtBQUNqQjtBQUNBO0lBQ0ksWUFBWTtJQUNaLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLHVCQUF1QjtBQUMzQjtBQUVBO0lBQ0ksWUFBWTtBQUNoQjtBQUVBO0lBQ0k7cURBQ2lEO0lBQ2pELGNBQWM7RUFDaEI7QUFFQTtNQUNJLGVBQWU7TUFDZixjQUFjO0VBQ2xCO0FBRUE7TUFDSSxZQUFZO0VBQ2hCO0FBR0E7SUFDRTtRQUNJLGdDQUFnQztRQUNoQyxZQUFZO1FBQ1osZ0JBQWdCO1FBQ2hCLGFBQWE7SUFDakI7O0lBRUE7UUFDSSxZQUFZO1FBQ1osZUFBZTtJQUNuQjtFQUNGO0FBRUE7SUFDRTtRQUNJLGdDQUFnQztRQUNoQyxZQUFZO1FBQ1osaUJBQWlCO1FBQ2pCLGFBQWE7SUFDakI7SUFDQTtRQUNJLFlBQVk7UUFDWixlQUFlO0lBQ25CO0VBQ0Y7QUFFQTtJQUNFO1FBQ0ksZ0NBQWdDO1FBQ2hDLFlBQVk7UUFDWixpQkFBaUI7UUFDakIsYUFBYTtJQUNqQjtJQUNBO1FBQ0ksWUFBWTtRQUNaLGVBQWU7SUFDbkI7SUFDQTtRQUNJLGVBQWU7SUFDbkI7RUFDRjtBQUVBO0lBQ0U7UUFDSSxnQ0FBZ0M7UUFDaEMsWUFBWTtRQUNaLGlCQUFpQjtRQUNqQixhQUFhO0lBQ2pCO0lBQ0E7UUFDSSxZQUFZO1FBQ1osZUFBZTtJQUNuQjtJQUNBO0tBQ0MsZUFBZTtJQUNoQjtJQUNBO1FBQ0ksZUFBZTtJQUNuQjtFQUNGIiwiZmlsZSI6InNyYy9hcHAvbW92aWVzL21vdmllcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtY2FyZCB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2sgIWltcG9ydGFudDtcclxuICAgIHdpZHRoOiA0MDBweDtcclxuICAgIG1hcmdpbjogMjFweDtcclxuICAgIGhlaWdodDogNzAwcHg7XHJcbn1cclxuLm1hdC1jYXJkLXRpdGxle1xyXG4gICAgd2lkdGg6IDMwMHB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcbi5tYXQtdG9vbGJhci1yb3csIC5tYXQtdG9vbGJhci1zaW5nbGUtcm93e1xyXG4gICAgcGFkZGluZzogMCAyMHB4O1xyXG59XHJcbi5tYXQtY2FyZC1oZWFkZXIgc3BhbntcclxuICAgIGZsb2F0OiByaWdodDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxufVxyXG4uZXhhbXBsZS1jYXJkIHAge1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcclxufSAgXHJcblxyXG4ubWF0LWNhcmQtaW1hZ2V7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuXHJcbi5maWxsLXJlbWFpbmluZy1zcGFjZSB7XHJcbiAgICAvKiBUaGlzIGZpbGxzIHRoZSByZW1haW5pbmcgc3BhY2UsIGJ5IHVzaW5nIGZsZXhib3guIFxyXG4gICAgICAgRXZlcnkgdG9vbGJhciByb3cgdXNlcyBhIGZsZXhib3ggcm93IGxheW91dC4gKi9cclxuICAgIGZsZXg6IDEgMSBhdXRvO1xyXG4gIH1cclxuXHJcbiAgLm5hdi1pdGVte1xyXG4gICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgIHBhZGRpbmc6IDAgOXB4O1xyXG4gIH1cclxuXHJcbiAgaDF7XHJcbiAgICAgIG1hcmdpbjogMTlweDtcclxuICB9XHJcblxyXG4gIFxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEzNjZweCkge1xyXG4gICAgLmV4YW1wbGUtY2FyZCB7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgd2lkdGg6IDM4MHB4O1xyXG4gICAgICAgIG1hcmdpbjogNDBweCAzMXg7XHJcbiAgICAgICAgaGVpZ2h0OiA3MDBweDtcclxuICAgIH1cclxuXHJcbiAgICAubWF0LWNhcmQtdGl0bGV7XHJcbiAgICAgICAgd2lkdGg6IDI5MHB4O1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMThweDtcclxuICAgIH1cclxuICB9XHJcblxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwMjVweCkge1xyXG4gICAgLmV4YW1wbGUtY2FyZCB7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgd2lkdGg6IDQ0MHB4O1xyXG4gICAgICAgIG1hcmdpbjogMjBweCAyMHB4O1xyXG4gICAgICAgIGhlaWdodDogNTAwcHg7XHJcbiAgICB9XHJcbiAgICAubWF0LWNhcmQtdGl0bGV7XHJcbiAgICAgICAgd2lkdGg6IDM0MHB4O1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIH1cclxuICB9XHJcblxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XHJcbiAgICAuZXhhbXBsZS1jYXJkIHtcclxuICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2sgIWltcG9ydGFudDtcclxuICAgICAgICB3aWR0aDogMzEycHg7XHJcbiAgICAgICAgbWFyZ2luOiAyMHB4IDIwcHg7XHJcbiAgICAgICAgaGVpZ2h0OiA1MDBweDtcclxuICAgIH1cclxuICAgIC5tYXQtY2FyZC10aXRsZXtcclxuICAgICAgICB3aWR0aDogMjIwcHg7XHJcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgfVxyXG4gICAgI3ZvdGUtYXZlcmFnZXtcclxuICAgICAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgLmV4YW1wbGUtY2FyZCB7XHJcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgd2lkdGg6IDMwMXB4O1xyXG4gICAgICAgIG1hcmdpbjogNDBweCBhdXRvO1xyXG4gICAgICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICB9XHJcbiAgICAubWF0LWNhcmQtdGl0bGV7XHJcbiAgICAgICAgd2lkdGg6IDIyMHB4O1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIH1cclxuICAgICN2b3RlLWF2ZXJhZ2V7XHJcbiAgICAgZm9udC1zaXplOiAxNHB4OyAgICAgICBcclxuICAgIH1cclxuICAgIGgxe1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICAgIH1cclxuICB9Il19 */"
 
 /***/ }),
 
@@ -317,7 +323,7 @@ module.exports = ".example-card {\r\n    display: inline-block !important;\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"mat-typography\">\r\n  <app-navigation></app-navigation>\r\n    <h1>{{title | titlecase}}</h1>\r\n  <div style=\"width: 100%; margin: 0 auto\">\r\n    <mat-card class=\"example-card\" *ngFor=\"let item of movies.results\">\r\n      <mat-card-header>\r\n        <mat-card-title (click)=\"goToMovie(item)\" class=\"card-title\">{{item.title | slice:0:29 }} <ng-container *ngIf=\"item.title.length >= 29\">...</ng-container></mat-card-title>\r\n        <span id=\"vote-average\">{{item.vote_average}}/10</span>\r\n        <mat-card-subtitle>{{item.release_date | date: 'dd/MM/yyyy'}}</mat-card-subtitle>\r\n      </mat-card-header>\r\n      <img mat-card-image src=\"https://image.tmdb.org/t/p/w500{{item.poster_path}}\" alt=\"{{item.title}}\">\r\n    </mat-card>\r\n  </div>\r\n  <mat-paginator (page)=\"checkPage($event)\" [length]=\"movies.totalResults\"\r\n    [pageSize]=\"movies.results?.length\" [pageSizeOptions]=\"[5, 10, 15, 20]\">\r\n  </mat-paginator>\r\n</section>"
+module.exports = "<section class=\"mat-typography\">\r\n  <app-navigation></app-navigation>\r\n  <h1>{{title | titlecase}}</h1>\r\n  <div fxLayout=\"row\">\r\n    <div fxLayout.xs=\"column\" fxFlexFill>\r\n      <mat-card class=\"example-card\" *ngFor=\"let item of movies.results\">\r\n        <mat-card-header>\r\n          <mat-card-title (click)=\"goToMovie(item)\" class=\"card-title\">{{item.title | slice:0:29 }} <ng-container\r\n              *ngIf=\"item.title.length >= 29\">...</ng-container>\r\n          </mat-card-title>\r\n          <span id=\"vote-average\">{{item.vote_average}}/10</span>\r\n          <mat-card-subtitle>{{item.release_date | date: 'dd/MM/yyyy'}}</mat-card-subtitle>\r\n        </mat-card-header>\r\n        <img mat-card-image src=\"https://image.tmdb.org/t/p/w500{{item.poster_path}}\" alt=\"{{item.title}}\">\r\n      </mat-card>\r\n    </div>\r\n  </div>\r\n  <mat-paginator (page)=\"pageEvent = checkPage($event)\" [length]=\"movies.totalResults\"\r\n    [pageSize]=\"movies.results?.length\" [pageSizeOptions]=\"[5, 10, 15, 20]\">\r\n  </mat-paginator>\r\n</section>"
 
 /***/ }),
 
@@ -409,7 +415,7 @@ var MoviesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vdmllcy9ub3ctcGxheWluZy9ub3ctcGxheWluZy5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -497,7 +503,7 @@ var NowPlayingComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vdmllcy9wb3B1bGFyLW1vdmllcy9wb3B1bGFyLW1vdmllcy5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -580,7 +586,7 @@ var PopularMoviesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vdmllcy90b3AtcmF0ZWQtbW92aWVzL3RvcC1yYXRlZC1tb3ZpZXMuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -663,7 +669,7 @@ var TopRatedMoviesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vdmllcy91cGNvbW1pbmctbW92aWVzL3VwY29tbWluZy1tb3ZpZXMuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -751,7 +757,7 @@ var UpcommingMoviesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".fill-remaining-space {\r\n    /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\r\n    flex: 1 1 auto;\r\n  }\r\n\r\n  .nav-item{\r\n      cursor: pointer;\r\n      padding: 0 9px;\r\n  }\r\n\r\n  .dropbtn {\r\n    color: white;\r\n    padding: 21px 16px;\r\n    border: none;\r\n  }\r\n\r\n  .dropdown {\r\n    position: relative;\r\n    display: inline-block;\r\n  }\r\n\r\n  .dropdown-content {\r\n    display: none;\r\n    top: 48px;\r\n    position: absolute;\r\n    background-color: #f1f1f1;\r\n    min-width: 160px;\r\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n    z-index: 2;\r\n    font-size: 16px;\r\n  }\r\n\r\n  .dropdown-content a {\r\n    color: black;\r\n    padding: 12px 16px;\r\n    text-decoration: none;\r\n    display: block;\r\n  }\r\n\r\n  .dropdown-content a:hover {background-color: #ddd;}\r\n\r\n  .dropdown:hover .dropdown-content {display: block;}\r\n"
+module.exports = ".fill-remaining-space {\r\n    /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\r\n    flex: 1 1 auto;\r\n  }\r\n\r\n  .nav-item{\r\n      cursor: pointer;\r\n      padding: 0 9px;\r\n  }\r\n\r\n  .dropbtn {\r\n    color: white;\r\n    padding: 21px 16px;\r\n    border: none;\r\n  }\r\n\r\n  .dropdown {\r\n    position: relative;\r\n    display: inline-block;\r\n  }\r\n\r\n  .dropdown-content {\r\n    display: none;\r\n    top: 48px;\r\n    position: absolute;\r\n    background-color: #f1f1f1;\r\n    min-width: 160px;\r\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n    z-index: 2;\r\n    font-size: 16px;\r\n  }\r\n\r\n  .dropdown-content a {\r\n    color: black;\r\n    padding: 12px 16px;\r\n    text-decoration: none;\r\n    display: block;\r\n  }\r\n\r\n  .dropdown-content a:hover {background-color: #ddd;}\r\n\r\n  .dropdown-content a:active {background-color: #ddd;}\r\n\r\n  .dropdown:hover .dropdown-content {display: block;}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2LWxheW91dC9uYXZpZ2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSTtxREFDaUQ7SUFDakQsY0FBYztFQUNoQjs7RUFFQTtNQUNJLGVBQWU7TUFDZixjQUFjO0VBQ2xCOztFQUVBO0lBQ0UsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixZQUFZO0VBQ2Q7O0VBRUE7SUFDRSxrQkFBa0I7SUFDbEIscUJBQXFCO0VBQ3ZCOztFQUVBO0lBQ0UsYUFBYTtJQUNiLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIseUJBQXlCO0lBQ3pCLGdCQUFnQjtJQUNoQiw0Q0FBNEM7SUFDNUMsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQixjQUFjO0VBQ2hCOztFQUdGLDJCQUEyQixzQkFBc0IsQ0FBQzs7RUFDbEQsNEJBQTRCLHNCQUFzQixDQUFDOztFQUVuRCxtQ0FBbUMsY0FBYyxDQUFDIiwiZmlsZSI6InNyYy9hcHAvbmF2LWxheW91dC9uYXZpZ2F0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmlsbC1yZW1haW5pbmctc3BhY2Uge1xyXG4gICAgLyogVGhpcyBmaWxscyB0aGUgcmVtYWluaW5nIHNwYWNlLCBieSB1c2luZyBmbGV4Ym94LiBcclxuICAgICAgIEV2ZXJ5IHRvb2xiYXIgcm93IHVzZXMgYSBmbGV4Ym94IHJvdyBsYXlvdXQuICovXHJcbiAgICBmbGV4OiAxIDEgYXV0bztcclxuICB9XHJcblxyXG4gIC5uYXYtaXRlbXtcclxuICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICBwYWRkaW5nOiAwIDlweDtcclxuICB9XHJcblxyXG4gIC5kcm9wYnRuIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDIxcHggMTZweDtcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICB9XHJcbiAgXHJcbiAgLmRyb3Bkb3duIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB9XHJcbiAgXHJcbiAgLmRyb3Bkb3duLWNvbnRlbnQge1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICAgIHRvcDogNDhweDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNmMWYxZjE7XHJcbiAgICBtaW4td2lkdGg6IDE2MHB4O1xyXG4gICAgYm94LXNoYWRvdzogMHB4IDhweCAxNnB4IDBweCByZ2JhKDAsMCwwLDAuMik7XHJcbiAgICB6LWluZGV4OiAyO1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gIH1cclxuICBcclxuICAuZHJvcGRvd24tY29udGVudCBhIHtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIHBhZGRpbmc6IDEycHggMTZweDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gIH1cclxuXHJcbiAgXHJcbi5kcm9wZG93bi1jb250ZW50IGE6aG92ZXIge2JhY2tncm91bmQtY29sb3I6ICNkZGQ7fVxyXG4uZHJvcGRvd24tY29udGVudCBhOmFjdGl2ZSB7YmFja2dyb3VuZC1jb2xvcjogI2RkZDt9XHJcblxyXG4uZHJvcGRvd246aG92ZXIgLmRyb3Bkb3duLWNvbnRlbnQge2Rpc3BsYXk6IGJsb2NrO31cclxuIl19 */"
 
 /***/ }),
 
@@ -762,7 +768,7 @@ module.exports = ".fill-remaining-space {\r\n    /* This fills the remaining spa
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"warn\">\r\n  <span class=\"nav-item dropdown\"> <span class=\"dropbtn\">Movies</span>\r\n    <span class=\"dropdown-content\">\r\n      <a [routerLink]=\"['/']\">Popular Movies</a>\r\n      <a [routerLink]=\"['/top-rated-movies']\">Top Rated Movies</a>\r\n      <a [routerLink]=\"['/upcomming-movies']\">Upcomming Movies</a>\r\n      <a [routerLink]=\"['/now-playing-movies']\">Now Playing Movies</a>\r\n    </span> </span>\r\n  <span routerLinkActive=\"router-link-active\" class=\"nav-item\">TV Shows</span>\r\n  <span routerLinkActive=\"router-link-active\" class=\"nav-item\">Actors</span>\r\n  <span class=\"fill-remaining-space\"></span>\r\n</mat-toolbar>"
+module.exports = "<mat-toolbar color=\"warn\">\r\n  <span class=\"nav-item dropdown\"> \r\n    <span class=\"dropbtn\">Movies</span>\r\n    <span class=\"dropdown-content\">\r\n      <a [routerLink]=\"['/']\">Popular Movies</a>\r\n      <a [routerLink]=\"['/top-rated-movies']\">Top Rated Movies</a>\r\n      <a [routerLink]=\"['/upcomming-movies']\">Upcomming Movies</a>\r\n      <a [routerLink]=\"['/now-playing-movies']\">Now Playing Movies</a>\r\n    </span> </span>\r\n  <span routerLinkActive=\"router-link-active\" class=\"nav-item\">TV Shows</span>\r\n  <span routerLinkActive=\"router-link-active\" class=\"nav-item\">Actors</span>\r\n  <span class=\"fill-remaining-space\"></span>\r\n</mat-toolbar>"
 
 /***/ }),
 
@@ -848,12 +854,12 @@ var MoviesServiceService = /** @class */ (function () {
     function MoviesServiceService(http) {
         this.http = http;
         this.movieUrl = 'https://api.themoviedb.org/3/movie/';
-        this.getPopularMoviesUrl = this.movieUrl + 'popular?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-        this.getTopRatedMoviesUrl = this.movieUrl + 'top_rated?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-        this.getUpcommingMoviesUrl = this.movieUrl + 'upcoming?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-        this.getNowPlayingMoviesUrl = this.movieUrl + 'now_playing?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
-        this.getLatestMovieUrl = this.movieUrl + 'latest?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
-        this.getMovieDetailsUrl = this.movieUrl + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
+        this.getPopularMoviesUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+        this.getTopRatedMoviesUrl = 'https://api.themoviedb.org/3/movie/top_rated?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+        this.getUpcommingMoviesUrl = 'https://api.themoviedb.org/3/movie/upcoming?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+        this.getNowPlayingMoviesUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
+        this.getLatestMovieUrl = 'https://api.themoviedb.org/3/movie/latest?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
+        this.getMovieDetailsUrl = 'https://api.themoviedb.org/3/movie/?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US';
     }
     MoviesServiceService.prototype.getPopularMovies = function (page) {
         var result = this.http.get(this.getPopularMoviesUrl + page)
@@ -896,7 +902,7 @@ var MoviesServiceService = /** @class */ (function () {
         return result;
     };
     MoviesServiceService.prototype.getMovie = function (movieId) {
-        var result = this.http.get(this.movieUrl + movieId + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US')
+        var result = this.http.get('https://api.themoviedb.org/3/movie/' + movieId + '?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) {
             if (response == null) {
                 return null;
