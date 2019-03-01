@@ -7,10 +7,10 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class MoviesServiceService {
-  movieUrl: string = 'https://api.themoviedb.org/3/movie/';
 
   constructor(private http: HttpClient) { }
 
+  movieUrl: string = 'https://api.themoviedb.org/3/movie/';
   getPopularMoviesUrl = this.movieUrl + 'popular?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
   getTopRatedMoviesUrl = this.movieUrl + 'top_rated?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
   getUpcommingMoviesUrl = this.movieUrl + 'upcoming?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
