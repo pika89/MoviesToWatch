@@ -40,5 +40,6 @@
 
   
 .dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:active {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
