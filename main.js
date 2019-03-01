@@ -847,6 +847,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var MoviesServiceService = /** @class */ (function () {
     function MoviesServiceService(http) {
         this.http = http;
+        this.movieUrl = 'https://api.themoviedb.org/3/movie/';
         this.getPopularMoviesUrl = this.movieUrl + 'popular?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
         this.getTopRatedMoviesUrl = this.movieUrl + 'top_rated?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
         this.getUpcommingMoviesUrl = this.movieUrl + 'upcoming?api_key=bd10005d959e8bce3e46efab4f86d0b0&language=en-US&page=';
